@@ -1,0 +1,49 @@
+$border-color: #a8a8a8;
+$border-size: 1px;
+$border-default: $border-size solid $border-color;
+$header-footer-color: #e7e7e7;
+$input-padding: 10px;
+$button-padding: 10px 30px;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  border-bottom: $border-default;
+}
+
+.main {
+  justify-content: center;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.footer {
+  border-top: $border-default;
+  margin-top: auto;
+}
+
+.header, .footer {
+  background-color: $header-footer-color;
+}
+
+.header,
+.footer,
+.main,
+.section {
+  padding: 30px;
+  display: flex;
+}
+
+.section {
+  justify-content: center;
+}
+
+.wrapper, 
+.main,
+.section {
+  width: 100%;
+}
